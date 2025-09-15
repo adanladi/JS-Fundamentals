@@ -1,2 +1,2 @@
-const m= "javascript is amazing";
+const m= "Javascript is amazing";
 console.log(m);
