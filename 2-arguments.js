@@ -1,9 +1,16 @@
 #!/usr/bin/node
-const argc = process.argv.length;
+// Get the number of arguments (excluding node and script path)
+const argCount = process.argv.length - 2;
 
-if (argc > 2 ) {
-	console.log('Argument' + (argc > 3 ? 's' : ' ') + 'found');
-} else {
-
-	console.log('No argument');	
+// Use switch statement to determine which message to print
+switch(argCount) {
+    case 0:
+        console.log("No argument");
+        break;
+    case 1:
+        console.log("Argument found");
+        break;
+    default:
+        console.log("Arguments found");
+        break;
 }
